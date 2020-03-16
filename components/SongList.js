@@ -3,8 +3,7 @@ import { View, Text, FlatList } from 'react-native';
 
 export function SongList(props) {
   renderSongList = () => {
-    const { songs, height } = props;
-    console.log('HERE', songs);
+    const { songs, renderSong, height } = props;
 
     if (!songs) {
       return (
@@ -17,13 +16,7 @@ export function SongList(props) {
     return (
       <FlatList
         data={songs}
-        renderItem={({item}) => {
-          return (
-            <View>
-              <Text>{item.song}</Text>
-            </View>
-          )
-        }}
+        renderItem={renderSong}
         keyExtractor={(item, index) => `${item.song}-${index}`}
       />
     )
