@@ -3,6 +3,7 @@ import { StyleSheet, View, Dimensions, SafeAreaView, StatusBar, Keyboard } from 
 
 import { SearchBar } from './components/SearchBar';
 import { SearchButton } from './components/SearchButton';
+import { SongList } from './components/SongList';
 
 import fetchSongs from './api/fetchSongs';
 
@@ -31,6 +32,10 @@ export default function App() {
         />
         <SearchButton handleSearchPress={handleSearchPress} />
       </View>
+      <SongList 
+      songs={songs}
+      height={height}
+      />
     </SafeAreaView>
   );
 }
