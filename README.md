@@ -1,6 +1,8 @@
 # itunes-search
 A simple app that lets the user search, play, and share songs using the iTunes api
 
+https://expo.io/@iand11/itunes-search
+
 
 ## Available Scripts
 
