@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Itunes Search",
+    "description": "A simple app that lets the user search, play, and share songs using the iTunes api",
     "slug": "itunes-search",
     "privacy": "public",
     "sdkVersion": "36.0.0",
